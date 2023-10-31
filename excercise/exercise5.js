@@ -16,9 +16,22 @@ console.log(smallest1); // Output: 1
 console.log(smallest2); // Output: 3
 
  */
+let numbers1 = [4, 2, 7, 1, 9];
+let numbers2 = [10, 20, 5, 3, 30];
 
+let smallest1 = findSmallest(numbers1);
+let smallest2 = findSmallest(numbers2);
+
+console.log(smallest1); // Output: 1
+console.log(smallest2); // Output: 3
 function findSmallest(numbers) {
-  // Your code here
+  let smallest = numbers[0];
+  for(let i=1;i<numbers.length;i++){
+    if(numbers[i]<smallest){
+      smallest = numbers[i];
+    }
+  }
+  return smallest;
 }
 
 module.exports = findSmallest;

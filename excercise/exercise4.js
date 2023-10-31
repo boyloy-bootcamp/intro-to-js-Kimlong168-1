@@ -16,9 +16,17 @@ console.log(even1); // Output: true
 console.log(even2); // Output: false
 
  */
+let num1 = 10;
+let num2 = 7;
+
+let even1 = isEven(num1);
+let even2 = isEven(num2);
+
+console.log(even1); // Output: true
+console.log(even2); // Output: false
 
 function isEven(num) {
-  // Your code here
+ return num % 2 == 0;
 }
 
 module.exports = isEven;
